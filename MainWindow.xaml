@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Timer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="354" Width="576">
+    <Grid Height="NaN" Margin="0,0,0,-5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="545*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="518" Height="104" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="22,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="286" Height="98" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="60" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txtWeekDay" HorizontalAlignment="Left" Margin="289,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="227" Height="98" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="48" Grid.Column="2"/>
+        <Button x:Name="btnSetAlert" Content="設定鬧鐘" HorizontalAlignment="Left" Margin="22,222,0,0" VerticalAlignment="Top" Height="35" Width="80" FontSize="16" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="btnCancelAlert" Content="取消鬧鐘" HorizontalAlignment="Left" Margin="83,222,0,0" VerticalAlignment="Top" Height="35" Width="78" FontSize="16" Grid.Column="2"/>
+        <ComboBox x:Name="cmbHour" HorizontalAlignment="Left" Margin="177,227,0,0" VerticalAlignment="Top" Width="50" Height="27" FontSize="16" Grid.Column="2"/>
+        <ComboBox x:Name="cmbMin" HorizontalAlignment="Left" Margin="233,227,0,0" VerticalAlignment="Top" Width="48" Height="27" FontSize="16" Grid.Column="2"/>
+        <MediaElement x:Name="meSound" HorizontalAlignment="Left" Height="95" Margin="348,227,0,0" VerticalAlignment="Top" Width="103" Grid.Column="2"/>
+
     </Grid>
 </Window>
